@@ -1,0 +1,17 @@
+#first {
+    background-image: url("https://p4css.github.io/webScroll/assets/123.png");
+    min-height: 2400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#second {
+    background-image: url("https://p4css.github.io/webScroll/assets/123_2.png");
+    min-height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

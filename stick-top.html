@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .fixed{
+            position:fixed;
+            top:0px;
+        }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div style="height:500px;background-color: dodgerblue;"></div>
+    <div id="tofix1" style="height:100px;background-color: coral;z-index:99; width:100%"></div>
+    <div style="height:500px;background-color: lightgrey;"></div>
+    <div style="height:500px;background-color: white;">
+        <svg id="tofix2" width="250" height="250" style="z-index:100;">
+            <circle cx="100" cy="100" r="100" fill="coral" />
+        </svg>
+    </div>
+    <div style="height:100vh;background-color: grey;"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var tofix1_pos = $("#tofix1").offset().top;
+        var tofix2_pos = $("#tofix2").offset().top;
+        console.log(tofix1_pos);
+        $(window).scroll(function(){
+            var current_pos = $(window).scrollTop();
+            console.log(current_pos);
+            if(current_pos > tofix1_pos){
+                $("#tofix1").addClass("fixed");               
+            }else{
+                $("#tofix1").removeClass("fixed");  
+            }
+            if(current_pos > tofix2_pos){
+                $("#tofix2").addClass("fixed");               
+            }else{
+                $("#tofix2").removeClass("fixed");  
+            }
+        });
+
+    </script>
+  </body>
+</html>
+        

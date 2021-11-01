@@ -1,0 +1,9 @@
+.jumbotron{
+    background-image: url("https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2019/12/32476698ac714bb0fa5d592aff6bfbb5.jpg");
+    color:white;
+    /* background-size:cover; */
+    background-position:50% 35%;
+    height:50vh;
+    /* vh=viewport height */
+    background-repeat: no-repeat;
+}
