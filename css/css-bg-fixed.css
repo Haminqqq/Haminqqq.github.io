@@ -1,6 +1,6 @@
 #first {
-    background-image: url("https://p4css.github.io/webScroll/assets/123.png");
-    min-height: 2400px;
+    background-image: url("/assets/1620994252t.jpg");
+    min-height: 1200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,8 +8,44 @@
 }
 
 #second {
-    background-image: url("https://p4css.github.io/webScroll/assets/123_2.png");
+    background-image: url("/assets/S__18972682.jpg");
     min-height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#third {
+    background-image: url("/assets/s__18972674.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ford {
+    background-image: url("/assets/宿舍.jpg");
+    min-height: 100%;width:1900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#five {
+    background-image: url("/assets/162039746741670_P12242494.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#six {
+    background-image: url("/assets/one-forty.jpg");
+    min-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
